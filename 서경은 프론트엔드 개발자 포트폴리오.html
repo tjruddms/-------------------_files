@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0033)https://portfolio.project-hh.com/ -->
+
 <html lang="ko">
 
 <head>
@@ -22,6 +22,64 @@
         opacity: 0;
       }
     }
+
+    /* 텍스트의 등장 효과 */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .NavigationBar_introduce-container__GxjbW {
+      animation: fadeIn 1s ease forwards;
+    }
+
+    /* 타이핑 애니메이션 */
+    @keyframes typing-name {
+      0% {
+        width: 0;
+        border-right-width: 0;
+      }
+
+      100% {
+        width: 100%;
+        border-right-width: 0;
+      }
+    }
+
+    @keyframes typing-name2 {
+      0% {
+        width: 0;
+        visibility: visible;
+        border-right-width: 0;
+      }
+
+      100% {
+        width: 100%;
+        border-right-width: 0;
+        visibility: visible;
+      }
+    }
+
+    #name {
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing-name 5s steps(120, end) forwards;
+    }
+
+    #name2 {
+      visibility: hidden;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing-name2 5s steps(120, end) forwards;
+      animation-delay: 2s;
+    }
   </style>
 </head>
 
@@ -33,17 +91,22 @@
           Developer<div class="NavigationBar_border__m2stT NavigationBar_active__3sc_S"></div>
         </div>
         <div class="NavigationBar_content-wrapper__3UC2h">
-          <div class="NavigationBar_typing-area__2mUKc headline1BD">KYUNGEUN
-            PORTFOLIO</div>
+          <div class="NavigationBar_typing-area__2mUKc headline1BD" id="name">KYOUNGEUN
+
+          </div>
+          <div class="NavigationBar_typing-area__2mUKc headline1BD" id="name2">PORTFOLIO
+
+          </div>
+
         </div>
         <div class="NavigationBar_lottie-wrapper__awvyM"><svg xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" width="200" height="200"
             preserveAspectRatio="xMidYMid meet"
             style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
             <defs>
-              <clippath id="__lottie_element_2">
+              <clipPath id="__lottie_element_2">
                 <rect width="200" height="200" x="0" y="0"></rect>
-              </clippath>
+              </clipPath>
             </defs>
             <g clipPath="url(#__lottie_element_2)">
               <g style="display: block;" transform="matrix(0.5,0,0,0.5,100,71.3935317993164)"
@@ -80,13 +143,11 @@
                         class="styles_chip__1z0-N styles_chip-LG__1sWMG styles_chip-fill__19MDF title2MD label captionBD"
                         style="background-color: rgb(255, 252, 236); color: rgb(27, 27, 30);">Frontend-Devloper</div><a
                         href="https://ko.reactjs.org/">
-                        <div
-                          class="styles_chip__1z0-N styles_chip-LG__1sWMG styles_chip-fill__19MDF title2MD label captionBD"
-                          style="background-color: rgb(255, 252, 236); color: rgb(27, 27, 30);">React.js</div>
+
                       </a>
                     </div>
-                    <div class="title2RG">안녕하세요. 웹개발과 웹디자인에 힘차게 발을 딛은 개발자 서경은입니다<br>2013년 2월에 순천여자고등학교 졸업 후 2018년 8월에
-                      전북대학교 주거환경과를 졸업하였습니다.
+                    <div class="title2RG">안녕하세요. 웹개발과 웹디자인에 힘차게 발을 딛은 개발자 서경은입니다.<br>2013년 2월에 순천여자고등학교 졸업 후 2018년 8월에
+                      전북대학교 주거환경과를 졸업하였습니다. <br> 웹에 대해 알아가는 단계지만 하나하나 배우는 자세로 열심히하겠습니다.
                     </div>
                   </div>
                 </div>
@@ -94,7 +155,7 @@
               <section class="styles_skill-container__Pcahb" id="skill">
                 <h1 class="headline1BD">SKILLS ABILITY</h1>
                 <div class="styles_ability-container__3mhyS ability-container-skill">
-                  <h2 class="headline2SB">Language/Framework/Library</h2>
+                  <h2 class="headline2SB">Language/Framework/Library</h2><br>
                   <h3 class="headline3MD">편해요</h3>
                   <div class="styles_skill-detail-container__-VC8p">
                     <div class="styles_chip__1z0-N styles_chip-LG__1sWMG styles_chip-fill__19MDF title2MD label bodyBD"
@@ -123,7 +184,7 @@
                           d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z">
                         </path>
                       </svg>CSS3</div>
-                  </div>
+                  </div><br>
                   <h3 class="headline3MD">어느정도 사용할 수 있어요</h3>
                   <div class="styles_skill-detail-container__-VC8p">
                     <div class="styles_chip__1z0-N styles_chip-LG__1sWMG styles_chip-fill__19MDF title2MD label bodyBD"
@@ -161,7 +222,7 @@
                           d="M11.77 11.24H9.956V8.202h2.152c1.17 0 1.834.522 1.834 1.466 0 1.008-.773 1.572-2.174 1.572zm.324 1.206H9.957v3.348h2.231c1.459 0 2.232-.585 2.232-1.685s-.795-1.663-2.326-1.663zM24 11.39v1.218c-1.128.108-1.817.944-2.226 2.268-.407 1.319-.463 2.937-.42 4.186.045 1.3-.968 2.5-2.337 2.5H4.985c-1.37 0-2.383-1.2-2.337-2.5.043-1.249-.013-2.867-.42-4.186-.41-1.324-1.1-2.16-2.228-2.268V11.39c1.128-.108 1.819-.944 2.227-2.268.408-1.319.464-2.937.42-4.186-.045-1.3.968-2.5 2.338-2.5h14.032c1.37 0 2.382 1.2 2.337 2.5-.043 1.249.013 2.867.42 4.186.409 1.324 1.098 2.16 2.226 2.268zm-7.927 2.817c0-1.354-.953-2.333-2.368-2.488v-.057c1.04-.169 1.856-1.135 1.856-2.213 0-1.537-1.213-2.538-3.062-2.538h-4.16v10.172h4.181c2.218 0 3.553-1.086 3.553-2.876z">
                         </path>
                       </svg>BootStrap</div>
-                  </div>
+                  </div><br>
                   <h3 class="headline3MD">사용해봤어요</h3>
                   <div class="styles_skill-detail-container__-VC8p">
                     <div class="styles_chip__1z0-N styles_chip-LG__1sWMG styles_chip-fill__19MDF title2MD label bodyBD"
@@ -214,17 +275,18 @@
                   <div class="styles_company-icon__1HUG0 naamezip">
                     <img src="LOLCAKE.png" width="140" height="91">
                     <div>
-                      <h2 class="headline2SB"><a href="https://naamezip.com/" target="_blank">롤케잌</a></h2>
+                      <h2 class="headline2SB"><a>롤케잌</a></h2>
                       <h3 class="headline3MD">2023년 11월2일 <br>- 11월7일</h3>
                     </div>
                   </div>
                   <div class="styles_activicy-description__hig-_ title2RG">
                     <ol>
-                      <li class="title1BD">웹 디자인, UI/UX설계</li>
+                      <li class="title1BD">웹 디자인 </li>
+                      <li class="title1BD"> UI/UX설계</li>
 
                     </ol>
                     <div class="styles_naamezip-activity__mhvjb">
-                      <h2 class="headline2SB">롤케잌 프로젝트 보기</h2>
+                      <br>
                       <div class="styles_items-container__3JZl5">
                         <div>
                           <img src="./롤케잌0.png">
@@ -246,17 +308,19 @@
                   <div class="styles_company-icon__1HUG0">
                     <img src="보이스바이브 로고.png" width="140" height="91">
                     <div>
-                      <h2 class="headline2SB"><a href="https://www.dnd.ac/" target="_blank">Voice Vive</a></h2>
+                      <h2 class="headline2SB"><a>Voice Vive</a></h2>
                       <h3 class="headline3MD">2023년11월27일<br>- 12월11일</h3>
                     </div>
                   </div>
                   <div class="styles_activicy-description__hig-_ title2RG">
                     <ol>
-                      <li class="title1BD">프로젝트 기획, 프론트엔드, UI/UX설계 </li>
+                      <li class="title1BD">프로젝트 기획 </li>
+                      <li class="title1BD">프론트엔드 </li>
+                      <li class="title1BD">UI/UX설계 </li>
 
                     </ol>
                     <div class="styles_naamezip-activity__mhvjb">
-                      <h2 class="headline2SB">보이스 바이브 프로젝트 보기</h2>
+                      <br>
                       <div class="styles_items-container__3JZl5_1">
                         <div>
                           <img src="./보이스바이브 1.png" width="100%" height="100%">
@@ -278,29 +342,37 @@
                   <div class="styles_company-icon__1HUG0">
                     <img src="ihu_logo.png" width="140" height="140">
                     <div>
-                      <h2 class="headline2SB"><a href="https://www.dnd.ac/" target="_blank">I HEAR YOU</a></h2>
+                      <h2 class="headline2SB"><a>I HEAR YOU</a></h2>
                       <h3 class="headline3MD">2023년12월26일<br>- 2024년3월5일</h3>
                     </div>
                   </div>
                   <div class="styles_activicy-description__hig-_ title2RG">
                     <ol>
-                      <li class="title1BD">프로젝트 기획, 프론트엔드, UI/UX설계</li>
+                      <li class="title1BD">프로젝트 기획 </li>
+                      <li class="title1BD">프론트엔드 </li>
+                      <li class="title1BD">UI/UX설계 </li>
 
                     </ol>
                     <div class="styles_naamezip-activity__mhvjb">
-                      <h2 class="headline2SB">아이히얼유 프로젝트 보기</h2>
-                      <div class="styles_items-container__3JZl5">
+                      <br>
+                      <div class="styles_items-container__3JZl5_2">
                         <div>
-                          <img src="./보이스바이브 1.png" width="100%" height="100%">
+                          <img src="./로그인화면.jpg" width="100%" height="100%">
                         </div>
                         <div>
-                          <img src="./보이스바이브 2.png">
+                          <img src="./STT화면.jpg ">
                         </div>
                         <div>
-                          <img src="./보이스바이브 3.png">
+                          <img src="./소리알림.jpg">
                         </div>
                         <div>
-                          <img src="./보이스바이브 4.png">
+                          <img src="./위치통계.jpg">
+                        </div>
+                        <div>
+                          <img src="./기간통계.jpg">
+                        </div>
+                        <div>
+                          <img src="./환경설정.jpg">
                         </div>
                       </div>
                     </div>
@@ -354,5 +426,6 @@
     </div>
   </div>
 </body>
+<script src="./서경은 포트폴리오.js"></script>
 
 </html>

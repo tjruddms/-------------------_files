@@ -406,6 +406,8 @@ template {
   display: none !important
 }
 
+
+
 /*!
  * animate.css -https://daneden.github.io/animate.css/
  * Version - 3.7.2
@@ -4079,10 +4081,7 @@ button {
   background: transparent
 }
 
-a,
-button:hover {
-  cursor: pointer
-}
+
 
 a {
   color: #212121
@@ -4368,12 +4367,12 @@ a {
 }
 
 .styles_about-container__LhNvr .styles_KYUNGEUN-container__1VDws .styles_left-content__3kv1_ img {
-  width: 146px;
-  min-width: 146px;
+  width: 139px;
+  min-width: 139px;
   height: 146px;
   min-height: 146px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: fill;
   object-position: center
 }
 
@@ -4482,6 +4481,7 @@ a {
   /* 2개의 행을 가진 그리드로 설정 */
   gap: 10px;
   /* 그리드 간격 설정 */
+
 }
 
 .styles_items-container__3JZl5 div {
@@ -4498,33 +4498,63 @@ a {
   /* 이미지가 부모 div에 꽉 차도록 높이 설정 */
   object-fit: cover;
   /* 이미지가 잘리지 않고 부모 요소에 맞게 확대/축소될 수 있도록 설정 */
+  border-radius: 5px;
 }
 
 /*디코그램 사진크기*/
 .styles_items-container__3JZl5_1 {
   display: grid;
   grid-template-columns: repeat(2, 400px);
-  /* 2개의 열을 가진 그리드로 설정 */
+
   grid-template-rows: repeat(2, 250px);
-  /* 2개의 행을 가진 그리드로 설정 */
+
   gap: 10px;
-  /* 그리드 간격 설정 */
+
 }
 
 .styles_items-container__3JZl5_1 div {
   width: 130%;
-  /* 부모 요소인 div의 너비를 100%로 설정하여 그리드 셀에 꽉 차게 함 */
+
   height: 120%;
-  /* 부모 요소인 div의 높이를 100%로 설정하여 그리드 셀에 꽉 차게 함 */
+
 }
 
 .styles_items-container__3JZl5_1 img {
   width: 70%;
-  /* 이미지가 부모 div에 꽉 차도록 너비 설정 */
+
   height: 70%;
-  /* 이미지가 부모 div에 꽉 차도록 높이 설정 */
+
   object-fit: cover;
-  /* 이미지가 잘리지 않고 부모 요소에 맞게 확대/축소될 수 있도록 설정 */
+
+  border-radius: 5px;
+}
+
+/*아이히얼유 사진*/
+.styles_items-container__3JZl5_2 {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+
+  grid-template-rows: repeat(2, 500px);
+
+  gap: 10px;
+
+}
+
+.styles_items-container__3JZl5_2 div {
+  width: 130%;
+
+  height: 120%;
+
+}
+
+.styles_items-container__3JZl5_2 img {
+  width: 70%;
+
+  height: 80%;
+
+  object-fit: cover;
+
+  border-radius: 5px;
 }
 
 
